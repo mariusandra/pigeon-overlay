@@ -6,4 +6,4 @@ Demo: https://mariusandra.github.io/pigeon-overlay/
 
 Example: https://github.com/mariusandra/pigeon-overlay/blob/master/demo/demo.js
 
-API: https://github.com/mariusandra/pigeon-overlay/blob/master/src/index.js#L13
+API: https://github.com/mariusandra/pigeon-overlay/blob/master/src/index.js
