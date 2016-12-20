@@ -6,7 +6,7 @@ module.exports = {
     '~': path.join(__dirname, './demo'),
 
     // name of local component to sometimes import in demo
-    'pigeon-maps': path.join(__dirname, '../pigeon-maps/src'),
+    // 'pigeon-maps': path.join(__dirname, '../pigeon-maps/src'),
 
     // our name
     'pigeon-overlay': path.join(__dirname, './src')
