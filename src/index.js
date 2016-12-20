@@ -24,7 +24,7 @@ export default class Overlay extends Component {
     const { left, top, className } = this.props
 
     return (
-      <div style={{ position: 'absolute', left: left, top: top }} className={className || ''}>
+      <div style={{ position: 'absolute', transform: `translate(${left}px, ${top}px)` }} className={className || ''}>
         {this.props.children}
       </div>
     )
