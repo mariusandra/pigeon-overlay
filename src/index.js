@@ -6,7 +6,7 @@ export default class Overlay extends Component {
     anchor: PropTypes.array.isRequired,
     offset: PropTypes.array,
 
-    // passed to dif
+    // passed to div
     className: PropTypes.string,
 
     // pigeon variables
