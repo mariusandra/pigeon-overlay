@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import { React, Inferno, Component } from '../src/infact'
 
-import Map from 'pigeon-maps'
+import Map from 'pigeon-maps/infact'
 import Overlay from 'pigeon-overlay'
 
 import pigeon from './pigeon.jpg'
