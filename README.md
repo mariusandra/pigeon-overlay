@@ -2,7 +2,9 @@
 
 [![npm version](https://img.shields.io/npm/v/pigeon-overlay.svg)](https://www.npmjs.com/package/pigeon-overlay)
 
-Demo: https://mariusandra.github.io/pigeon-overlay/
+React demo: https://mariusandra.github.io/pigeon-overlay/
+
+Inferno demo: https://mariusandra.github.io/pigeon-overlay/inferno/
 
 Example: https://github.com/mariusandra/pigeon-overlay/blob/master/demo/demo.js
 
