@@ -1,4 +1,5 @@
-import { React, Inferno, Component, PropTypes } from './infact'
+import { React, Inferno, Component } from './infact'
+import PropTypes from 'prop-types'
 
 export default class Overlay extends Component {
   static propTypes = process.env.BABEL_ENV === 'inferno' ? {} : {

@@ -20,7 +20,6 @@ module.exports = {
       './index.js'
     ] : [
       'webpack-dev-server/client?http://0.0.0.0:4040',
-      'webpack/hot/only-dev-server',
       './index.js'
     ]
   },
@@ -34,7 +33,7 @@ module.exports = {
     loaders: [
       {
         test: /\.(html|png|jpg|gif|jpeg|svg)$/,
-        loader: 'file',
+        loader: 'file-loader',
         query: {
           name: '[name].[ext]'
         }
@@ -42,14 +41,14 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loaders: (isProd ? [] : ['react-hot']).concat([
+        loaders: [
           'babel-loader'
-        ])
+        ]
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
     modules: [
       path.resolve('./demo'),
       'node_modules'
@@ -57,7 +56,7 @@ module.exports = {
     alias: config.alias
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
+    new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.bundle.js' }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(nodeEnv),
