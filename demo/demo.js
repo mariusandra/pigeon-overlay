@@ -13,7 +13,7 @@ export default class Demo extends Component {
              zoom={12}
              width={600}
              height={400}>
-          <Overlay anchor={[50.879, 4.6997]} offset={[60, 39]}>
+          <Overlay anchor={[50.879, 4.6997]} offset={[60, 39]} style={{border: '1px solid red'}}>
             <img src={pigeon} width={120} height={79} alt='' />
           </Overlay>
         </Map>

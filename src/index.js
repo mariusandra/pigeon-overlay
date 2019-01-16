@@ -22,10 +22,10 @@ export default class Overlay extends Component {
   // render
 
   render () {
-    const { left, top, className } = this.props
+    const { left, top, className, style = {} } = this.props
 
     return (
-      <div style={{ position: 'absolute', transform: `translate(${left}px, ${top}px)` }} className={className || ''}>
+      <div style={{ position: 'absolute', transform: `translate(${left}px, ${top}px)`, ...style }} className={className || ''}>
         {this.props.children}
       </div>
     )
