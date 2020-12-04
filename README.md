@@ -1,4 +1,7 @@
-# pigeon-overlay - Overlay component for pigeon-maps
+# NB! This is deprecated! Use the `<Overlay />` component directly inside [pigeon-maps](https://github.com/mariusandra/pigeon-maps) 
+
+
+## pigeon-overlay - Overlay component for pigeon-maps
 
 [![npm version](https://img.shields.io/npm/v/pigeon-overlay.svg)](https://www.npmjs.com/package/pigeon-overlay)
 
